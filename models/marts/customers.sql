@@ -2,19 +2,19 @@ with
 
 customers as (
 
-    select * from {{ ref('stg_customers') }}
+    select * from {{ ref('jaffleshop_platform','stg_customers') }}
 
 ),
 
 orders_table as (
 
-    select * from {{ ref('orders') }}
+    select * from {{ ref('jaffleshop_finance','orders') }}
 
 ),
 
 order_items_table as (
 
-    select * from {{ ref('order_items') }}
+    select * from {{ ref('jaffleshop_finance','order_items') }}
 ),
 
 order_summary as (
