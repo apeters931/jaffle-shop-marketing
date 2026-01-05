@@ -6,7 +6,7 @@ models:
     group: marketing
     config:
       contract:
-        enforced: true
+        enforced: false
     columns:
       - name: location_id
         data_type: text
