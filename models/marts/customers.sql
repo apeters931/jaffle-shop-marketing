@@ -1,4 +1,4 @@
-with. -- test
+with -- test
 
 customers as (
 
